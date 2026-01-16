@@ -5,5 +5,5 @@
  */
 export const answers = {
   c01: "D",
-  c02: "A",
+  c02: "B",
 };
