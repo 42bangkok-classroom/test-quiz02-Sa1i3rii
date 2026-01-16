@@ -48,6 +48,7 @@ interface User {
 
 interface NewUser {
   name?: string;
+  username?: string;
   phone?: string;
   address?: {
     street?: string;
@@ -58,7 +59,7 @@ interface NewUser {
       lat?: string;
       lng?: string;
     };
-  };
+  } | null;
 }
 
 
