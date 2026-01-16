@@ -43,7 +43,7 @@ interface User {
   phone: string | null;
   address: Address | null;
 }
-
+/*
 interface NewUser {
   name?: string;
   username?: string;
@@ -60,7 +60,7 @@ interface NewUser {
     };
   } | null;
 }
-
+*/
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 export async function addUser(
