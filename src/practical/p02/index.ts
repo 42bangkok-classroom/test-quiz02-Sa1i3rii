@@ -1,4 +1,3 @@
-/*
 type newUser = {
   name: string;
   username?: string;
@@ -21,48 +20,9 @@ type newUser = {
     bs: string;
   };
 };
-export function addUser(newUser: newUser | null) {}
-*/
+//export function addUser(newUser: newUser | null) {}
+
 import axios from "axios";
-
-
-interface Geo {
-  lat: string | null;
-  lng: string | null;
-}
-
-interface Address {
-  street: string | null;
-  suite: string | null;
-  city: string | null;
-  zipcode: string | null;
-  geo: Geo | null;
-}
-
-interface User {
-  id: number;
-  name: string | null;
-  phone: string | null;
-  address: Address | null;
-}
-
-interface NewUser {
-  name?: string;
-  username?: string;
-  email?: string;
-  phone?: string;
-  address?: {
-    street?: string;
-    suite?: string;
-    city?: string;
-    zipcode?: string;
-    geo?: {
-      lat?: string;
-      lng?: string;
-    };
-  } | null;
-}
-
 
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
