@@ -21,8 +21,6 @@ type newUser = {
     bs: string;
   };
 };
-//export function addUser(newUser: newUser | null) {}
-
 
 interface Geo {
   lat: string | null;
@@ -43,24 +41,6 @@ interface User {
   phone: string | null;
   address: Address | null;
 }
-/*
-interface NewUser {
-  name?: string;
-  username?: string;
-  email?: string;
-  phone?: string;
-  address?: {
-    street?: string;
-    suite?: string;
-    city?: string;
-    zipcode?: string;
-    geo?: {
-      lat?: string;
-      lng?: string;
-    };
-  } | null;
-}
-*/
 const API_URL = "https://jsonplaceholder.typicode.com/users";
 
 export async function addUser(
