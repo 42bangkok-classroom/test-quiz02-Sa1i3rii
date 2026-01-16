@@ -45,7 +45,7 @@ export async function addUser(
     const response = await axios.get<User[]>(API_URL);
     const users = response.data;
 
-    // Map existing users to standardized format
+    
     const result: User[] = users.map((user) => ({
       id: user.id,
       name: user.name ?? null,
@@ -57,7 +57,7 @@ export async function addUser(
       return result;
     }
 
-    // Create new user with ID
+
     const newUser = createUserFromData(newUserData, result);
     return [...result, newUser];
   } catch {
